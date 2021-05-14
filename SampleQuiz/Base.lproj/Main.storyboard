@@ -25,8 +25,8 @@
                                     <segue destination="NCZ-KF-KHU" kind="presentation" id="fRW-ti-r9M"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="〇〇クイズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-GN-eql">
-                                <rect key="frame" x="82" y="163" width="251" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="〇〇クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-GN-eql">
+                                <rect key="frame" x="54" y="163" width="307" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="114"/>
+            <point key="canvasLocation" x="-607.24637681159425" y="113.83928571428571"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="1vf-ht-wmA">
@@ -49,13 +49,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-zk-wvz">
-                                <rect key="frame" x="172" y="124" width="61" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K80-cB-W3N">
                                 <rect key="frame" x="18" y="194" width="379" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,7 +59,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6o-OR-mVi">
-                                <rect key="frame" x="171" y="504" width="72" height="42"/>
+                                <rect key="frame" x="128" y="512" width="172" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
@@ -75,7 +68,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1J-nh-HLb">
-                                <rect key="frame" x="171" y="573" width="72" height="42"/>
+                                <rect key="frame" x="128" y="581" width="172" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
@@ -84,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2m-SU-FrN">
-                                <rect key="frame" x="172" y="635" width="72" height="42"/>
+                                <rect key="frame" x="128" y="643" width="173" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
@@ -93,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnW-9u-PNH">
-                                <rect key="frame" x="172" y="704" width="72" height="42"/>
+                                <rect key="frame" x="128" y="712" width="173" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
@@ -101,14 +94,29 @@
                                     <action selector="btnActionWithSender:" destination="NCZ-KF-KHU" eventType="touchUpInside" id="ys6-qR-osb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-zk-wvz">
+                                <rect key="frame" x="80" y="124" width="255" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tvd-O7-4Nn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="I6o-OR-mVi" id="GCn-o7-5OS"/>
+                        <outlet property="answerButton2" destination="G1J-nh-HLb" id="1n5-uu-sbh"/>
+                        <outlet property="answerButton3" destination="L2m-SU-FrN" id="Cjl-fw-lJg"/>
+                        <outlet property="answerButton4" destination="tnW-9u-PNH" id="fym-xA-Ysi"/>
+                        <outlet property="quizNumberLabel" destination="TwA-zk-wvz" id="SGu-is-83h"/>
+                        <outlet property="quizTextView" destination="K80-cB-W3N" id="xUs-gc-Yly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRp-Ox-mQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="114"/>
+            <point key="canvasLocation" x="37.681159420289859" y="113.83928571428571"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="nxi-dH-da0">

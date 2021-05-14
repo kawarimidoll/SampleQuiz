@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B98EE40264EA6FB0049EB17 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7B98EE3F264EA6FB0049EB17 /* quiz.csv */; };
 		7BB45BF9264CADCD00C475B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB45BF8264CADCD00C475B8 /* AppDelegate.swift */; };
 		7BB45BFB264CADCD00C475B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB45BFA264CADCD00C475B8 /* SceneDelegate.swift */; };
 		7BB45BFD264CADCD00C475B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB45BFC264CADCD00C475B8 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B98EE3F264EA6FB0049EB17 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		7BB45BF5264CADCD00C475B8 /* SampleQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB45BF8264CADCD00C475B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB45BFA264CADCD00C475B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				7BB45BFA264CADCD00C475B8 /* SceneDelegate.swift */,
 				7BB45BFC264CADCD00C475B8 /* ViewController.swift */,
 				7BB45BFE264CADCD00C475B8 /* Main.storyboard */,
+				7B98EE3F264EA6FB0049EB17 /* quiz.csv */,
 				7BB45C0E264CB79100C475B8 /* ScoreViewController.swift */,
 				7BB45C0C264CB6CC00C475B8 /* QuizViewController.swift */,
 				7BB45C01264CADCF00C475B8 /* Assets.xcassets */,
@@ -133,6 +136,7 @@
 				7BB45C05264CADCF00C475B8 /* LaunchScreen.storyboard in Resources */,
 				7BB45C02264CADCF00C475B8 /* Assets.xcassets in Resources */,
 				7BB45C00264CADCD00C475B8 /* Main.storyboard in Resources */,
+				7B98EE40264EA6FB0049EB17 /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
