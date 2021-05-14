@@ -8,13 +8,21 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
+    @IBOutlet weak var scoreLabel: UILabel!
+
+    var correct = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        scoreLabel.text = "Your score: \(correct)!"
+
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func toTopButtonAction(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+    }
 
     /*
     // MARK: - Navigation

@@ -94,6 +94,10 @@
                                     <action selector="btnActionWithSender:" destination="NCZ-KF-KHU" eventType="touchUpInside" id="ys6-qR-osb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeA-rm-Bam">
+                                <rect key="frame" x="20" y="100" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-zk-wvz">
                                 <rect key="frame" x="80" y="124" width="255" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,8 +114,10 @@
                         <outlet property="answerButton2" destination="G1J-nh-HLb" id="1n5-uu-sbh"/>
                         <outlet property="answerButton3" destination="L2m-SU-FrN" id="Cjl-fw-lJg"/>
                         <outlet property="answerButton4" destination="tnW-9u-PNH" id="fym-xA-Ysi"/>
+                        <outlet property="judgeImageView" destination="aeA-rm-Bam" id="tuu-JZ-BL8"/>
                         <outlet property="quizNumberLabel" destination="TwA-zk-wvz" id="SGu-is-83h"/>
                         <outlet property="quizTextView" destination="K80-cB-W3N" id="xUs-gc-Yly"/>
+                        <segue destination="LKY-KL-IWd" kind="presentation" identifier="toScoreVC" id="pCL-yX-esX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRp-Ox-mQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -121,7 +127,7 @@
         <!--Score View Controller-->
         <scene sceneID="nxi-dH-da0">
             <objects>
-                <viewController id="LKY-KL-IWd" customClass="ScoreViewController" customModule="SampleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="LKY-KL-IWd" customClass="ScoreViewController" customModule="SampleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twY-FR-MXY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,9 +137,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="トップに戻る"/>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="LKY-KL-IWd" eventType="touchUpInside" id="qbr-cz-BGz"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スコア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCJ-a0-iCk">
-                                <rect key="frame" x="162" y="145" width="91" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スコア" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCJ-a0-iCk">
+                                <rect key="frame" x="76" y="143" width="262" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -143,10 +152,13 @@
                         <viewLayoutGuide key="safeArea" id="Xnf-os-LYM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="KCJ-a0-iCk" id="rjj-q5-gkE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roU-jc-cfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="114"/>
+            <point key="canvasLocation" x="713.04347826086962" y="113.83928571428571"/>
         </scene>
     </scenes>
     <resources>
