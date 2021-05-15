@@ -1,27 +1,33 @@
 //
-//  ScoreViewController.swift
+//  SelectLevelViewController.swift
 //  SampleQuiz
 //
-//  Created by kawarimidoll on 2021/05/13.
+//  Created by kawarimidoll on 2021/05/15.
 //
 
 import UIKit
 
-class ScoreViewController: UIViewController {
-    @IBOutlet weak var scoreLabel: UILabel!
+class SelectLevelViewController: UIViewController {
 
-    var correct = 0
+    var selectTag = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scoreLabel.text = "Your score: \(correct)!"
-
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func toTopButtonAction(_ sender: Any) {
-        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let quizVC = segue.destination as! QuizViewController
+        quizVC.selectLevel = selectTag
+    }
+
+
+    @IBAction func levelButtonAction(sender: UIButton) {
+        print(sender.tag)
+        selectTag = sender.tag
+        performSegue(withIdentifier: "toQuizVC", sender: nil)
+
     }
 
     /*

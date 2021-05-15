@@ -22,7 +22,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="スタート"/>
                                 <connections>
-                                    <segue destination="NCZ-KF-KHU" kind="presentation" id="fRW-ti-r9M"/>
+                                    <segue destination="ygV-JB-GlO" kind="presentation" id="rjf-0m-JtG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="〇〇クイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6d-GN-eql">
@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607.24637681159425" y="113.83928571428571"/>
+            <point key="canvasLocation" x="-1116" y="114"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="1vf-ht-wmA">
@@ -122,7 +122,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRp-Ox-mQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="113.83928571428571"/>
+            <point key="canvasLocation" x="465" y="114"/>
+        </scene>
+        <!--Select Level View Controller-->
+        <scene sceneID="dPv-dd-DHV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ygV-JB-GlO" customClass="SelectLevelViewController" customModule="SampleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqe-jI-BE9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select level..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljy-pB-t4d">
+                                <rect key="frame" x="138" y="145" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYx-F9-8k8">
+                                <rect key="frame" x="163" y="424" width="88" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Level 1"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="ygV-JB-GlO" eventType="touchUpInside" id="khD-We-uML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-tX-Sf9">
+                                <rect key="frame" x="161" y="538" width="92" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Level 2"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="ygV-JB-GlO" eventType="touchUpInside" id="Um0-FK-Aa9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeb-uM-hhk">
+                                <rect key="frame" x="161" y="659" width="93" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Level 3"/>
+                                <connections>
+                                    <action selector="levelButtonActionWithSender:" destination="ygV-JB-GlO" eventType="touchUpInside" id="AUL-bS-xA7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5rI-xx-Nfy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="NCZ-KF-KHU" kind="presentation" identifier="toQuizVC" id="1Zv-Us-sdO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5H-yK-LDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355" y="114"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="nxi-dH-da0">
@@ -158,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="roU-jc-cfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="113.83928571428571"/>
+            <point key="canvasLocation" x="1290" y="114"/>
         </scene>
     </scenes>
     <resources>
