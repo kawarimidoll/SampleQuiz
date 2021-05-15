@@ -29,6 +29,7 @@ class QuizViewController: UIViewController {
         print(filename)
 
         csvArray = loadCSV(fileName: filename)
+        csvArray.shuffle()
         print(csvArray)
         setQuiz()
 
