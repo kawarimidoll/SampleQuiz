@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4CFA7C264FF78F00E843F5 /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4CFA7B264FF78F00E843F5 /* launchImageView.png */; };
 		7B98EE40264EA6FB0049EB17 /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7B98EE3F264EA6FB0049EB17 /* quiz1.csv */; };
 		7B98EE43264F30290049EB17 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B98EE41264F30290049EB17 /* correct.png */; };
 		7B98EE44264F30290049EB17 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B98EE42264F30290049EB17 /* incorrect.png */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		57A1528CB5F58317A35F943B /* Pods_SampleQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4CFA7B264FF78F00E843F5 /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
 		7B98EE3F264EA6FB0049EB17 /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
 		7B98EE41264F30290049EB17 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		7B98EE42264F30290049EB17 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 				C0BFDAC6856D0C171CF426C1 /* Pods-SampleQuiz.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B4CFA7A264FF78F00E843F5 /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				7B4CFA7B264FF78F00E843F5 /* launchImageView.png */,
+			);
+			path = launchImage;
 			sourceTree = "<group>";
 		};
 		7B98EE45264F306E0049EB17 /* image */ = {
@@ -110,6 +120,7 @@
 				7BB45C01264CADCF00C475B8 /* Assets.xcassets */,
 				7B98EE45264F306E0049EB17 /* image */,
 				7BB45C03264CADCF00C475B8 /* LaunchScreen.storyboard */,
+				7B4CFA7A264FF78F00E843F5 /* launchImage */,
 				7BB45C06264CADCF00C475B8 /* Info.plist */,
 			);
 			path = SampleQuiz;
@@ -182,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B4CFA7C264FF78F00E843F5 /* launchImageView.png in Resources */,
 				7B98EE4B264F7C980049EB17 /* quiz2.csv in Resources */,
 				7B98EE43264F30290049EB17 /* correct.png in Resources */,
 				7B98EE44264F30290049EB17 /* incorrect.png in Resources */,
