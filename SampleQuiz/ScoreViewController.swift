@@ -8,7 +8,9 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
+    @IBOutlet var shareButton: UIButton!
+    @IBOutlet var returnTopButton: UIButton!
 
     var correct = 0
 
@@ -18,6 +20,10 @@ class ScoreViewController: UIViewController {
         scoreLabel.text = "Your score: \(correct)!"
 
         // Do any additional setup after loading the view.
+        shareButton.layer.borderWidth = 2
+        shareButton.layer.borderColor = UIColor.black.cgColor
+        returnTopButton.layer.borderWidth = 2
+        returnTopButton.layer.borderColor = UIColor.black.cgColor
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {

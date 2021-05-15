@@ -8,6 +8,9 @@
 import UIKit
 
 class SelectLevelViewController: UIViewController {
+    @IBOutlet var lebel1Button: UIButton!
+    @IBOutlet var lebel2Button: UIButton!
+    @IBOutlet var lebel3Button: UIButton!
 
     var selectTag = 0
 
@@ -15,6 +18,12 @@ class SelectLevelViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lebel1Button.layer.borderWidth = 2
+        lebel1Button.layer.borderColor = UIColor.black.cgColor
+        lebel2Button.layer.borderWidth = 2
+        lebel2Button.layer.borderColor = UIColor.black.cgColor
+        lebel3Button.layer.borderWidth = 2
+        lebel3Button.layer.borderColor = UIColor.black.cgColor
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -34,6 +34,14 @@ class QuizViewController: UIViewController {
         setQuiz()
 
         // Do any additional setup after loading the view.
+        answerButton1.layer.borderWidth = 2
+        answerButton1.layer.borderColor = UIColor.black.cgColor
+        answerButton2.layer.borderWidth = 2
+        answerButton2.layer.borderColor = UIColor.black.cgColor
+        answerButton3.layer.borderWidth = 2
+        answerButton3.layer.borderColor = UIColor.black.cgColor
+        answerButton4.layer.borderWidth = 2
+        answerButton4.layer.borderColor = UIColor.black.cgColor
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
